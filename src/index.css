@@ -11,3 +11,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.todo-wrap {
+  padding: 40px 0;
+  width: 80vw;
+  margin: auto;
+}
+
+.todo-form {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+}
+.todo-form input, .todo-form button {
+  height: 45px;
+  border-radius: 3px;
+  border: 1px solid #000;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+.todo-form input {
+  flex: 1;
+}
+.todo-form button {
+  cursor: pointer;
+  background: green;
+  color: #fff;
+  border-color: green;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.todo-form button + button {
+  background: orange;
+  border-color: orange;
+  color: #000;
+}
+
+.todo-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.todo-task + .todo-task {
+  margin-top: 10px;
+}
+
+.todo-task p {
+  flex: 1;
+}
+
+.todo-task .done {
+  text-decoration: line-through;
+  opacity: .5;
+}
+
+.todo-task .task-control {
+  display: flex;
+  gap: 15px;
+}
+.todo-task .task-control span {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+}
